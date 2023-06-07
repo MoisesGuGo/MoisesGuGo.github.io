@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/w3.css">
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shorcut icon" href="../Gallery/Icon.png">
+    <title>Project Zomboid Guide</title>
+</head>
+
+<body>
+    <header>
+        <!-- This is the header part-->
+        <div>
+            <div class="container_img">
+                <!-- This is the image-->
+                <div class="col-5 col-s-12">
+                    <img src="../Gallery/header.jpg" alt="header">
+                </div>
+                <!-- This is the h1-->
+                <div class="col-7 col-s-12">
+                    <h1>Beginner's guide to survive in Project Zomboid</h1>
+                </div>
+            </div>
+            <nav class="col-12 col-s-12">
+                <!-- This is the mobile menú-->
+                    <ul class="menu_movil menu_drop menu">
+                        <li><a href="#menu" class="size_icon"><i class="fa fa-bars"></i></a>
+                            <ul class="menu">
+                                <li class="col-3 col-s-3">
+                                    <a href="../HTML/index.html">Home</a>
+                                </li>
+                                <li class="col-3 col-s-3">
+                                    <a href="../HTML/page 1.html">Guide</a>
+                                </li>
+                                <li class="col-3 col-s-3">
+                                    <a href="../HTML/page 2.html">Tips & Advices</a>
+                                </li>
+                                <li class="col-3 col-s-3">
+                                    <a href="../HTML/gallery.html">Gallery</a>
+                                </li>
+                                <li class="col-3 col-s-12">
+                                    <a href="../HTML/questionary.html">Questionary</a>
+                                </li>
+                                <li class="col-3 col-s-12">
+                                    <a href="../HTML/data.html">Weapon Table</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                <!-- This is the desktop menú-->
+                    <ul class="menu_pc menu_drop menu">
+                        <li class="col-3 col-s-12">
+                            <a href="../HTML/index.html">Home</a>
+                        </li>
+                        <li class="col-3 col-s-12">
+                            <a href="../HTML/page 1.html">Guide</a>
+                        </li>
+                        <li class="col-3 col-s-12">
+                            <a href="../HTML/page 2.html">Tips & Advices</a>
+                        </li>
+                        <li class="col-3 col-s-12">
+                            <a href="../HTML/gallery.html">Gallery</a>
+                        </li>
+                        <li class="col-3 col-s-12">
+                            <a href="../HTML/questionary.html">Questionary</a>
+                        </li>
+                        <li class="col-3 col-s-12">
+                            <a href="../HTML/data.html">Weapon Table</a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 class="border-int">Questionary</h2>
+            <article class="container_quest">
+                <h2>Lets do some questions</h2>
+                <p><b>Answer the following questions:</b></p>
+
+                <!-- Question one -->
+                <p class="titles">1. When did the apocalipse happen in first place?</p><!-- 04/07/1993 -->
+                <input type="date" name="french-revolution" id="q1">
+                <br><br>
+
+                <!-- Question two -->
+                <p class="titles">2.What is the name of the accident that produce all of this?</p>
+                <!-- Knox Event-->
+                <input type="text" name="novel" min="1" max="10000" id="q2">
+                <br><br>
+
+                <!-- Question three -->
+                <p class="titles">3. What item should you avoid to use in any situation?</p>
+                <!-- A Gun of any kind -->
+                <select id="q3">
+                    <option name="city" value="empty"> </option>
+                    <option name="city" value="Bangkok">Spoiled food </option>
+                    <option name="city" value="Paris">A pan</option>
+                    <option name="city" value="Gun">A Gun of any kind</option>
+                    <option name="city" value="London">Bandages</option>
+                </select>
+                <br><br>
+
+                <!-- Question four -->
+                <p class="titles">4. Which is the best place to start a game if you are new to the game:</p>
+                <!-- West Point -->
+                <input type="radio" name="king" value="Rosewood" id="q41"> Rosewood <br>
+                <input type="radio" name="king" value="West Point" id="q42"> West Point<br>
+                <input type="radio" name="king" value="Muldraugh" id="q43"> Muldraugh<br>
+                <input type="radio" name="king" value="Riverside" id="q44"> Riverside <br>
+                <input type="radio" name="king" value="Forest" id="q45"> In the middle of the forest<br>
+                <br><br>
+
+                <!-- Question five -->
+                <p class="titles">5. If you could only pick one of this in a bad situation, what would you pick?</p>
+                <!-- The Pan and the water bottle -->
+                <input type="checkbox" name="loot" value="Pan" id="q51"> A Pan<br>
+
+                <input type="checkbox" name="loot" value="Cans" id="q52"> Some cans of food<br>
+
+                <input type="checkbox" name="loot" value="Bottle" id="q53"> An Empty bottle of water<br>
+
+                <input type="checkbox" name="loot" value="Gun" id="q54"> A shotgun with 5 ammo.
+                <br><br>
+
+                <button onclick="check()">Check your knowlegde</button>
+                <p class="titles" id="congratulations"> </p>
+                <p id="mark"> </p>
+                <p id="feedback"> </p>
+            </article>
+        </section>
+    </main>
+    <!-- Here starts the footer -->
+    <footer>
+        <hr>
+        <p>© 2023 Project Zomboid Guide</p>
+        <ul class="container-footer">
+            <li class="col-2 col-s2">
+                <p><a href="https://store.steampowered.com/app/108600/Project_Zomboid/" target="_blank">Buy the game</a>
+                </p>
+            </li>
+            <li class="col-2 col-s2">
+                <p><a href="">Cookies policy</a></p>
+            </li>
+            <li class="col-2 col-s2">
+                <p><a href="">Privacy policy</a></p>
+            </li>
+            <li class="col-2 col-s2">
+                <p><a href="https://projectzomboid.com/blog/news/" target="_blank">Last Update and more</a></p>
+            </li>
+            <li class="col-2 col-s2">
+                <p><a href="#top">Go up</a></p>
+            </li>
+        </ul>
+        <hr>
+    </footer>
+    <script src="../JV/javascrpit.js"></script>
+</body>
+</html>

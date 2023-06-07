@@ -1,0 +1,14 @@
+/*universal selector*/
+* {
+  padding: 1px;
+  box-sizing: border-box;
+  border: 0px solid red;
+}
+
+div>p {
+  margin: 2%;
+}
+
+div>h3 {
+  margin: 2%;
+}
