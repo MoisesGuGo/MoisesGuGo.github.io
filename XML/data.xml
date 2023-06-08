@@ -83,12 +83,3 @@
     <ammo>https://pzwiki.net/w/images/5/54/ShotgunAmmo.png</ammo>
   </weapon>
 </weapons>
-<!ELEMENT weapons(weapon+)>
-<!ELEMENT weapon(icon, name, type, attackType, damage, durability, ammo)>
-<!ELEMENT icon (#PCDATA)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT type (#PCDATA)>
-<!ELEMENT attackType (#PCDATA)>
-<!ELEMENT damage (#PCDATA)>
-<!ELEMENT durability (#PCDATA)>
-<!ELEMENT ammo (#PCDATA)>
