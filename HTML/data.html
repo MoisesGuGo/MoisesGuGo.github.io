@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/w3.css">
     <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/xml.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shorcut icon" href="../Gallery/Icon.png">
     <title>Project Zomboid Table</title>
@@ -78,18 +79,24 @@
     </header>
     <main>
         <section class="border-int">
-            <h2>Survival guide</h2>
+            <h2>Weapon Table</h2>
             <p>
-                This game can be very overwhelming for
-                the player with the large number of systems
-                you have. Here are some tips that can make
-                your first game easier. during the
-                first hours of playing in your world.
+                Here I show a table with some of 
+                the many varieties of weapons that 
+                the game has to offer when facing the 
+                undead. There are both melee and ranged 
+                weapons, from the most powerful to the 
+                most goofy one.
             </p>
         </section>
+        <section>
+            <article>
+                <table id="demo" border="1">
+                </table>
+            </article>
+        </section>
     </main>
-    <table id="demo" border="1">
-    </table>
+    
     <script>
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
@@ -104,22 +111,27 @@
             var x, i, xmlDoc, table;
             // Obtenemos un objeto XMLDocument con el contenido del archivo xml del servidor
             xmlDoc = xml.responseXML;
-            table = "<tr><th>src</th><th>alt</th><th>dscore</th><th>tscore</th><th>uploaded</th></tr>";
+
+            table = "<tr><th>icon</th><th>name</th><th>type</th><th>attackType</th><th>damage</th><th>durability</th><th>ammo</th></tr>";
             // Obtenemos todos los nodos denominados CD del archivo xml
-            x = xmlDoc.getElementsByTagName("images");
+            x = xmlDoc.getElementsByTagName("weapon");
             // Hacemos un bucle por todos los elementos CD
             for (i = 0; i < x.length; i++) {
                 // Del elemento X, obtenemos del primer elemento denominado "artist"
                 table += "<tr><td>" +
-                    x[i].getElementsByTagName("src")[0].childNodes[0].nodeValue +
+                    x[i].getElementsByTagName("icon")[0].childNodes[0].nodeValue +
                     "</td><td>" +
-                    x[i].getElementsByTagName("alt")[0].childNodes[0].nodeValue +
+                    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
                     "</td><td>" +
-                    x[i].getElementsByTagName("dscore")[0].childNodes[0].nodeValue +
+                    x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue +
                     "</td><td>" +
-                    x[i].getElementsByTagName("tscore")[0].childNodes[0].nodeValue +
+                    x[i].getElementsByTagName("attackType")[0].childNodes[0].nodeValue +
                     "</td><td>" +
-                    x[i].getElementsByTagName("uploaded")[0].childNodes[0].nodeValue +
+                    x[i].getElementsByTagName("damage")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("durability")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("ammo")[0].childNodes[0].nodeValue +
                     "</td></tr>";
             }
             document.getElementById("demo").innerHTML = table;
