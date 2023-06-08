@@ -1,9 +1,0 @@
-<!ELEMENT weapons(weapon+)>
-<!ELEMENT weapon(icon, name, type, attackType, damage, durability, ammo)>
-<!ELEMENT icon (#PCDATA)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT type (#PCDATA)>
-<!ELEMENT attackType (#PCDATA)>
-<!ELEMENT damage (#PCDATA)>
-<!ELEMENT durability (#PCDATA)>
-<!ELEMENT ammo (#PCDATA)>
