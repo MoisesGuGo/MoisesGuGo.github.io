@@ -1,35 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE gallery SYSTEM "data.dtd">
 
-<gallery>
-<images>
-    <src>https://img.unocero.com/2021/08/rickroll_4k-1024x768.jpeg</src>
-    <alt>roll</alt>
-    <dscore>100</dscore>
-    <tscore>1000</dscore>
-    <uploaded>10-2-2023</uploaded>
-</images>
-
-<images>
-    <src>https://cadena100-cdnmed.agilecontent.com/resources/jpg/0/6/1649151706060.jpg</src>
-    <alt>ladron</alt>
-    <dscore>12</dscore>
-    <tscore>40</dscore>
-    <uploaded>12-3-2023</uploaded>
-</images>
-
-<images>
-    <src>https://www.lamoncloa.gob.es/presidente/PublishingImages/SANCHEZ-BIOGRAFIA/080323-sanchez-biografia2.jpg</src>
-    <alt>sanchez</alt>
-    <dscore>99</dscore>
-    <tscore>700</dscore>
-    <uploaded>24-2-2023</uploaded>
-</images>
-</gallery>
-<!ELEMENT gallery(images+)>
-<!ELEMENT images(src, alt, dscore, tscore, uploaded)>
-<!ELEMENT src (#PCDATA)>
-<!ELEMENT alt (#PCDATA)>
-<!ELEMENT dscore (#PCDATA)>
-<!ELEMENT tsocre (#PCDATA)>
-<!ELEMENT uploaded (#PCDATA)>
+<weapons>
+  <weapon>
+    <icon>https://pzwiki.net/w/images/c/ca/Pan.png</icon>
+    <name>Frying Pan</name>
+    <type>Melee</type>
+    <attackType>One-Hand</attackType>
+    <damage>0.3-0.5</damage>
+    <durability>120</durability>
+    <ammo>None</ammo>
+  </weapon>
+  <weapon>
+    <icon>https://pzwiki.net/w/images/f/fb/Axe.png</icon>
+    <name>Axe</name>
+    <type>Melee</type>
+    <attackType>Two-Hand</attackType>
+    <damage>0.8-2</damage>
+    <durability>455</durability>
+    <ammo>None</ammo>
+  </weapon>
+  <weapon>
+    <icon>https://pzwiki.net/w/images/c/c6/Pushbroom.png</icon>
+    <name>Broom</name>
+    <type>Melee</type>
+    <attackType>Two-Hand</attackType>
+    <damage>0.2-0.5</damage>
+    <durability>6</durability>
+    <ammo>None</ammo>
+  </weapon>
+  <weapon>
+    <icon>https://pzwiki.net/w/images/e/eb/Saxophone.png</icon>
+    <name>Saxophone</name>
+    <type>Melee</type>
+    <attackType>One-Hand</attackType>
+    <damage>0.4-0.8</damage>
+    <durability>10</durability>
+    <ammo>None</ammo>
+  </weapon>
+  <weapon>
+    <icon>https://pzwiki.net/w/images/b/bc/MetalTube.png</icon>
+    <name>Metal Pipe</name>
+    <type>Melee</type>
+    <attackType>One-Hand</attackType>
+    <damage>0.6-1</damage>
+    <durability>120</durability>
+    <ammo>None</ammo>
+  </weapon>
+  <weapon>
+    <icon>https://pzwiki.net/w/images/e/e9/Katana.png</icon>
+    <name>Katana</name>
+    <type>Melee</type>
+    <attackType>Two-Hand</attackType>
+    <damage>8</damage>
+    <durability>150</durability>
+    <ammo>None</ammo>
+  </weapon>
+  <weapon>
+    <icon>https://pzwiki.net/w/images/4/40/RevolverLong.png</icon>
+    <name>Magnum</name>
+    <type>Range</type>
+    <attackType>One-Hand</attackType>
+    <damage>1.2-1.9</damage>
+    <durability>None</durability>
+    <ammo>https://pzwiki.net/w/images/4/4b/RifleAmmo308loose.png</ammo>
+  </weapon>
+  <weapon>
+    <icon>https://pzwiki.net/w/images/5/57/AssaultRifle.png</icon>
+    <name>M16 Assault Rifle</name>
+    <type>Range</type>
+    <attackType>Two-Hand</attackType>
+    <damage>0.8-2.4</damage>
+    <durability>None</durability>
+    <ammo>https://pzwiki.net/w/images/4/4b/RifleAmmo308loose.png</ammo>
+  </weapon>
+  <weapon>
+    <icon>https://pzwiki.net/w/images/8/80/ShotgunDoublebarrel.png</icon>
+    <name>Double Barrel Shotgun</name>
+    <type>Range</type>
+    <attackType>Two-Hand</attackType>
+    <damage>2-2.7</damage>
+    <durability>None</durability>
+    <ammo>https://pzwiki.net/w/images/5/54/ShotgunAmmo.png</ammo>
+  </weapon>
+</weapons>
+<!ELEMENT weapons(weapon+)>
+<!ELEMENT weapon(icon, name, type, attackType, damage, durability, ammo)>
+<!ELEMENT icon (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT attackType (#PCDATA)>
+<!ELEMENT damage (#PCDATA)>
+<!ELEMENT durability (#PCDATA)>
+<!ELEMENT ammo (#PCDATA)>
